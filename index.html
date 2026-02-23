@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cinematic Wanderblog mit Touren, Filmen, Guides und Gear." />
+  <title>Fridtjof Hille – Wanderblog</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@500;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8TBT2S4zQ4RjXQ6fQY8NfM9H+Y6QYkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" aria-label="Hauptnavigation">
+      <div class="container">
+        <a class="navbar-brand" href="#hero" aria-label="Zur Startsektion">Fridtjof Hille</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Navigation öffnen">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#touren">Touren</a></li>
+            <li class="nav-item"><a class="nav-link" href="#film">Filme</a></li>
+            <li class="nav-item"><a class="nav-link" href="#guides">Guides</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gear">Gear</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero-section" aria-label="Hero Bereich">
+    <video class="hero-video" autoplay muted loop playsinline disablepictureinpicture aria-label="Hintergrundvideo mit Berglandschaft" poster="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80">
+      <source src="https://cdn.coverr.co/videos/coverr-hiker-walking-on-a-mountain-1579/1080p.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content text-center">
+      <p class="hero-kicker">Cinematic Mountain Journal</p>
+      <h1>Fridtjof Hille</h1>
+      <p class="hero-subline">Wanderblog • Abenteuer • Storytelling</p>
+      <a href="#touren" class="btn btn-accent" aria-label="Zu den Touren springen">Touren entdecken</a>
+    </div>
+    <a href="#touren" class="scroll-down" aria-label="Nach unten scrollen">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <main>
+    <section id="touren" class="py-5 reveal">
+      <div class="container">
+        <div class="section-title text-center mb-4">
+          <span>Blog Übersicht</span>
+          <h2>Touren</h2>
+        </div>
+
+        <div class="tag-filters d-flex flex-wrap gap-2 justify-content-center mb-4" role="group" aria-label="Touren nach Tags filtern">
+          <button class="btn chip active" data-filter="all" aria-pressed="true">Alle</button>
+          <button class="btn chip" data-filter="insel" aria-pressed="false">Insel</button>
+          <button class="btn chip" data-filter="berge" aria-pressed="false">Berge</button>
+          <button class="btn chip" data-filter="mehrtagestour" aria-pressed="false">Mehrtagestour</button>
+          <button class="btn chip" data-filter="winter" aria-pressed="false">Winter</button>
+        </div>
+
+        <div class="row g-4" id="tourGrid">
+          <div class="col-md-6 col-lg-4 tour-item reveal" data-tags="insel berge mehrtagestour">
+            <article class="card tour-card h-100">
+              <img src="https://images.unsplash.com/photo-1504280390368-3971cc8fe5b9?auto=format&fit=crop&w=1200&q=80" class="card-img-top" alt="Vulkanlandschaft auf Teneriffa" loading="lazy" />
+              <div class="card-body">
+                <p class="meta">12. März 2026 • Teneriffa</p>
+                <h3 class="card-title">Sonnenaufgang am Teide</h3>
+                <p class="card-text">Eine Nachtwanderung durch Lavafelder bis zum Gipfelgrat – kalter Wind, rotes Morgenlicht und stille Weite.</p>
+                <a class="btn btn-accent btn-sm" href="post.html">Lesen</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 tour-item reveal" data-tags="insel mehrtagestour berge">
+            <article class="card tour-card h-100">
+              <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80" class="card-img-top" alt="Steilküste auf Madeira" loading="lazy" />
+              <div class="card-body">
+                <p class="meta">03. Februar 2026 • Madeira</p>
+                <h3 class="card-title">Quer über Madeira in 5 Tagen</h3>
+                <p class="card-text">Von Nebelwald zu schroffen Küstenpfaden: Eine kompakte Mehrtagestour mit vielen Wetterwechseln.</p>
+                <a class="btn btn-accent btn-sm" href="post.html">Lesen</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 tour-item reveal" data-tags="berge mehrtagestour winter">
+            <article class="card tour-card h-100">
+              <img src="https://images.unsplash.com/photo-1464822759844-d150baec0134?auto=format&fit=crop&w=1200&q=80" class="card-img-top" alt="Verschneite Dolomiten" loading="lazy" />
+              <div class="card-body">
+                <p class="meta">17. Januar 2026 • Dolomiten</p>
+                <h3 class="card-title">Winterbiwak unter den Drei Zinnen</h3>
+                <p class="card-text">Klarer Himmel, minus zehn Grad und knirschender Schnee – eine ruhige Tour fernab der Hauptwege.</p>
+                <a class="btn btn-accent btn-sm" href="post.html">Lesen</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 tour-item reveal" data-tags="berge mehrtagestour">
+            <article class="card tour-card h-100">
+              <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=80" class="card-img-top" alt="Alpiner Pfad im Abendlicht" loading="lazy" />
+              <div class="card-body">
+                <p class="meta">25. September 2025 • Berchtesgaden</p>
+                <h3 class="card-title">Steinernes Meer Traverse</h3>
+                <p class="card-text">Drei Tage über Karsthochflächen mit dramatischen Wolken, alpinen Hütten und überraschend wenig Menschen.</p>
+                <a class="btn btn-accent btn-sm" href="post.html">Lesen</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 tour-item reveal" data-tags="insel winter">
+            <article class="card tour-card h-100">
+              <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80" class="card-img-top" alt="Nebeliger Gipfelpfad" loading="lazy" />
+              <div class="card-body">
+                <p class="meta">08. Dezember 2025 • La Palma</p>
+                <h3 class="card-title">Kammweg im Passatnebel</h3>
+                <p class="card-text">Eine minimalistische Tagestour mit schnellen Lichtwechseln entlang des Vulkanrückens im Norden.</p>
+                <a class="btn btn-accent btn-sm" href="post.html">Lesen</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 tour-item reveal" data-tags="berge">
+            <article class="card tour-card h-100">
+              <img src="https://images.unsplash.com/photo-1464823063530-08f10ed1a2dd?auto=format&fit=crop&w=1200&q=80" class="card-img-top" alt="Bergkette bei Sonnenaufgang" loading="lazy" />
+              <div class="card-body">
+                <p class="meta">11. August 2025 • Allgäu</p>
+                <h3 class="card-title">Goldene Stunde am Heilbronner Weg</h3>
+                <p class="card-text">Technische Grate, warme Farben und ein langes Abendfenster für Foto- und Filmsequenzen auf dem Höhenweg.</p>
+                <a class="btn btn-accent btn-sm" href="post.html">Lesen</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="film" class="section-muted py-5 reveal">
+      <div class="container text-center">
+        <div class="section-title mb-4">
+          <span>Neuster Upload</span>
+          <h2>Film</h2>
+        </div>
+        <div class="ratio ratio-16x9 film-frame mx-auto shadow-lg">
+          <iframe src="https://www.youtube.com/embed/AOVygF99Klk" title="Wanderfilm aus den Bergen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="#" class="btn btn-accent mt-4">Alle Filme</a>
+      </div>
+    </section>
+
+    <section id="guides" class="py-5 reveal">
+      <div class="container text-center">
+        <div class="section-title mb-3">
+          <span>Routenwissen</span>
+          <h2>Guides</h2>
+        </div>
+        <p class="lead mx-auto guide-copy">Praxisnahe Guides mit Track-Empfehlungen, Packlisten und Kamera-Setups für Mehrtagestouren in Europa.</p>
+        <a href="https://example.com" class="btn btn-accent" target="_blank" rel="noopener">Guides ansehen</a>
+      </div>
+    </section>
+
+    <section id="gear" class="section-muted py-5 reveal">
+      <div class="container">
+        <div class="section-title text-center mb-4">
+          <span>Minimal & zuverlässig</span>
+          <h2>Gear</h2>
+        </div>
+        <div class="row g-3 justify-content-center">
+          <div class="col-sm-6 col-lg-3"><div class="gear-item"><i class="fa-solid fa-backpack"></i> Rucksack</div></div>
+          <div class="col-sm-6 col-lg-3"><div class="gear-item"><i class="fa-solid fa-moon"></i> Schlafsystem</div></div>
+          <div class="col-sm-6 col-lg-3"><div class="gear-item"><i class="fa-solid fa-fire-burner"></i> Kochen</div></div>
+          <div class="col-sm-6 col-lg-3"><div class="gear-item"><i class="fa-solid fa-shirt"></i> Kleidung</div></div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-accent">Gearliste öffnen</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="py-5 reveal">
+      <div class="container">
+        <div class="section-title text-center mb-4">
+          <span>Let’s connect</span>
+          <h2>Kontakt</h2>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-md-4"><div class="info-box"><i class="fa-brands fa-youtube"></i><h3>YouTube</h3><p>@fridtjofhille</p></div></div>
+          <div class="col-md-4"><div class="info-box"><i class="fa-regular fa-envelope"></i><h3>E-Mail</h3><p>hello@fridtjof-hille.de</p></div></div>
+          <div class="col-md-4"><div class="info-box"><i class="fa-brands fa-instagram"></i><h3>Instagram</h3><p>@fridtjof.trails</p></div></div>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required aria-label="Name" />
+              <div class="invalid-feedback">Bitte gib deinen Namen an.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">E-Mail</label>
+              <input type="email" class="form-control" id="email" name="email" required aria-label="E-Mail" />
+              <div class="invalid-feedback">Bitte gib eine gültige E-Mail ein.</div>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Nachricht</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required aria-label="Nachricht"></textarea>
+              <div class="invalid-feedback">Bitte gib eine Nachricht ein.</div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-4">
+            <button type="submit" class="btn btn-accent">Nachricht senden</button>
+            <p id="formStatus" class="form-status mb-0" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4">
+    <div class="container text-center">
+      <h3>Fridtjof Hille</h3>
+      <p class="mb-2">Cinematic hiking stories from Europe’s wild edges.</p>
+      <div class="social-links mb-3">
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Mail"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+      <small>© 2026 Fridtjof Hille. Alle Rechte vorbehalten.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
