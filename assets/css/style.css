@@ -2,8 +2,8 @@
   --bg: #f7f7f5;
   --text: #1b1f24;
   --muted: #667085;
-  --accent: #b85a3a;
-  --accent-hover: #96452b;
+  --accent: #2f6f8f;
+  --accent-hover: #245670;
   --surface: #ffffff;
   --dark: #0f141b;
   --radius: 1rem;
@@ -46,7 +46,7 @@ h1, h2, h3, h4, .navbar-brand {
 .nav-link:hover,
 .nav-link:focus,
 .navbar-brand:hover {
-  color: #ffd9c9;
+  color: #b9deef;
 }
 
 .navbar-toggler {
@@ -194,6 +194,20 @@ h1, h2, h3, h4, .navbar-brand {
   max-width: 720px;
 }
 
+
+.guides-section {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(rgba(10, 20, 28, 0.56), rgba(10, 20, 28, 0.56)),
+    url('https://images.unsplash.com/photo-1464822759844-d150baec0134?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+}
+
+.guides-section .section-title span,
+.guides-section .guide-copy {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
 .gear-item,
 .info-box {
   background: var(--surface);
@@ -233,7 +247,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: #ffceb8;
+  color: #b9deef;
 }
 
 .reveal {
