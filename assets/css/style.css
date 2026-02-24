@@ -57,6 +57,13 @@ h1, h2, h3, h4, .navbar-brand {
   filter: invert(1);
 }
 
+/* =========================
+   HERO
+   - title.jpeg is the ONLY background
+   - NO overlay layer
+   - NO box behind h1
+   ========================= */
+
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -66,18 +73,20 @@ h1, h2, h3, h4, .navbar-brand {
   color: #fff;
 }
 
-.hero-video {
+/* Use only the local image as hero background */
+.hero-image {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-image: url('../img/title.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 
+/* Disable any dark overlay completely */
 .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,.46), rgba(0,0,0,.58));
+  display: none;
 }
 
 .hero-content {
@@ -85,16 +94,15 @@ h1, h2, h3, h4, .navbar-brand {
   z-index: 1;
 }
 
-.hero-kicker {
-  text-transform: uppercase;
-  letter-spacing: .18em;
-  font-size: .85rem;
-  margin-bottom: 1rem;
-}
-
 .hero-content h1 {
   font-size: clamp(2.2rem, 7vw, 5.2rem);
   margin-bottom: .5rem;
+
+  /* no frame / no box / no overlay */
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .hero-subline {
@@ -298,4 +306,47 @@ footer .social-links a:hover {
     padding: .9rem;
     margin-top: .5rem;
   }
+}
+
+.ref-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.1rem;
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+}
+
+.ref-card i {
+  color: var(--accent);
+  font-size: 1.35rem;
+}
+
+.ref-card h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.ref-card p {
+  color: #4b5563;
+  margin-bottom: .4rem;
+}
+
+.ref-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.gear-sub-link {
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.gear-sub-link:hover,
+.gear-sub-link:focus {
+  color: var(--accent-hover);
+  text-decoration: underline;
 }
