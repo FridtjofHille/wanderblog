@@ -2,8 +2,8 @@
   --bg: #f7f7f5;
   --text: #1b1f24;
   --muted: #667085;
-  --accent: #b85a3a;
-  --accent-hover: #96452b;
+  --accent: #2f6f8f;
+  --accent-hover: #24566f;
   --surface: #ffffff;
   --dark: #0f141b;
   --radius: 1rem;
@@ -46,7 +46,7 @@ h1, h2, h3, h4, .navbar-brand {
 .nav-link:hover,
 .nav-link:focus,
 .navbar-brand:hover {
-  color: #ffd9c9;
+  color: #cbe3f0;
 }
 
 .navbar-toggler {
@@ -165,9 +165,9 @@ h1, h2, h3, h4, .navbar-brand {
 }
 
 .chip.active {
-  background: var(--dark);
+  background: var(--accent);
   color: #fff;
-  border-color: var(--dark);
+  border-color: var(--accent);
 }
 
 .tour-card {
@@ -201,6 +201,33 @@ h1, h2, h3, h4, .navbar-brand {
 .guide-copy {
   max-width: 720px;
 }
+
+
+#guides {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.guides-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 20, 27, 0.45);
+}
+
+.guides-content {
+  position: relative;
+  z-index: 1;
+}
+
+#guides .section-title span,
+#guides .guide-copy {
+  color: #e5e7eb;
+}
+
 
 .gear-item,
 .info-box {
@@ -241,7 +268,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: #ffceb8;
+  color: #cbe3f0;
 }
 
 .reveal {
