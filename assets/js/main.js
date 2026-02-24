@@ -44,23 +44,4 @@
   } else {
     revealItems.forEach((item) => item.classList.add('visible'));
   }
-
-  const form = document.getElementById('contactForm');
-  const statusEl = document.getElementById('formStatus');
-
-  if (form) {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      if (!form.checkValidity()) {
-        event.stopPropagation();
-        form.classList.add('was-validated');
-        if (statusEl) statusEl.textContent = 'Bitte prüfe die markierten Felder.';
-        return;
-      }
-
-      form.classList.remove('was-validated');
-      form.reset();
-      if (statusEl) statusEl.textContent = 'Danke! Deine Nachricht wurde lokal validiert.';
-    });
-  }
 })();

@@ -188,6 +188,12 @@ h1, h2, h3, h4, .navbar-brand {
   margin-bottom: .45rem;
 }
 
+.tour-card .video-tags {
+  color: var(--muted);
+  font-size: .9rem;
+  margin: 0 0 .9rem;
+}
+
 .section-muted {
   background: #f1f2ef;
 }
@@ -243,18 +249,6 @@ h1, h2, h3, h4, .navbar-brand {
   font-size: 1.25rem;
   margin-bottom: .5rem;
   color: var(--accent);
-}
-
-.contact-form {
-  background: #fff;
-  border-radius: var(--radius);
-  padding: 1.25rem;
-  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.07);
-}
-
-.form-status {
-  font-size: .95rem;
-  color: #146c43;
 }
 
 footer {
